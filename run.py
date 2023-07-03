@@ -33,7 +33,7 @@ print("Enter your guess, input the row and column with format 'A1' to 'H8'.")
 print("If invalid row or column, you are prompted to enter a valid choice.")
 print("You cannot guess the same position multiple times.")
 print("The grid will be displayed after each guess.")
-print("showing your hits, misses, and remaining turns.)
+print("showing your hits, misses, and remaining turns.")
 print("Good luck!")
 
 
