@@ -59,7 +59,7 @@
 
 - No bugs to report.
 
-## Deplyment:
+## Deployment:
 
 - The application has been deployed to Heroku. The steps taken were:
 
@@ -70,6 +70,8 @@
 - In "Settings" section, click "convig vars" and add to Key - PORT and Value - 8000. 
 - In "Deployment method", select the GitHub option and provide the repository details. Click on "Connect".
 - Click on "Deploy Branch" with comprahending repository.
+
+- The live link can be found here - https://battleships-23-b994430075a8.herokuapp.com/
 
 ## Credits:
 
