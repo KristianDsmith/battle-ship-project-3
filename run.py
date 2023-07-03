@@ -46,3 +46,15 @@ def create_ships(board)
         while board[ship_row][ship_column] == "X":
             ship_row, ship_column = get_ship_location()
             board[ship_row][ship_column] = "X"
+
+# prompt user to input the row and column of a ship's location on the game board and validates the inputs.
+def get_ship_location():
+    row = input("Enter the row of the ship: ").upper()
+    while row not in "12345678":
+        print('Not an appropriate choice, please select a valid row')
+        row = input("Enter the row of the ship: ").upper()
+        column = input("Enter the column of the ship: ").upper()
+        while column not in "ABCDEFGH":
+             print('Not an appropriate choice, please select a valid column')
+             column = input("Enter the column of the ship: ").upper()
+             return int(row) - 1, letters_to_numbers[column]
