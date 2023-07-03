@@ -1,7 +1,18 @@
-# Rules
-# X fr placing ship and hit battleship
-# ' ' for availble space
-# '-' for missed shot
+# Battleships Game
+# Rules:
+# - The game is played on an 8x8 grid.
+# - The computer randomly places 5 ships on the grid.
+# - Your objective is to destroy all the computer's ships by guessing their locations.
+# - On each turn, you will enter a row and column to guess the location of a ship.
+# - If your guess is a hit, the corresponding position on the guess board will show "X".
+# - If your guess is a miss, the corresponding position on the guess board will show "-".
+# - You have a total of 10 turns to sink all the ships.
+# - The game ends when you either sink all the ships or run out of turns.
+# - To enter your guess, input the row and column using the format "A1" to "H8".
+# - If you enter an invalid row or column, you will be prompted to enter a valid choice.
+# - You cannot guess the same position multiple times.
+# - The grid will be displayed after each guess, showing your hits, misses, and remaining turns.
+# - Good luck!
 
 from random import randint
 
