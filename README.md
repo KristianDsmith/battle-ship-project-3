@@ -35,3 +35,11 @@
 - If the player hits a battleship, a congratulatory message is displayed.
 - If the player misses, a message indicating a miss is displayed.
 
+## Testing 
+
+- I have tested the gameplay within the console of codeanywhere while building the game.
+- After deploying to Heroku i then tested the game to check it is working properly. 
+
+## Validator Testing
+
+
