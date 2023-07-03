@@ -14,6 +14,24 @@
 # - The grid will be displayed after each guess, showing your hits, misses, and remaining turns.
 # - Good luck!
 
+# Print the rules for the player to read
+print("Welcome to Battleships!")
+print("Rules:")
+print("-" * 50)
+print("The game is played on an 8x8 grid.")
+print("The computer randomly places 5 ships on the grid.")
+print("Your objective is to destroy all the computer's ships by guessing their locations.")
+print("On each turn, you will enter a row and column to guess the location of a ship.")
+print("If your guess is a hit, the corresponding position on the guess board will show 'X'.")
+print("If your guess is a miss, the corresponding position on the guess board will show '-'.")
+print("You have a total of 10 turns to sink all the ships.")
+print("The game ends when you either sink all the ships or run out of turns.")
+print("To enter your guess, input the row and column using the format 'A1' to 'H8'.")
+print("If you enter an invalid row or column, you will be prompted to enter a valid choice.")
+print("You cannot guess the same position multiple times.")
+print("The grid will be displayed after each guess, showing your hits, misses, and remaining turns.")
+print("Good luck!")
+
 from random import randint
 
 #board for hlding ship locations
@@ -104,3 +122,4 @@ if __name__ == "__main__":
         print("You have " + str(turns) + " turns left")
         if turns == 0:
             print("You ran out of turns")
+
