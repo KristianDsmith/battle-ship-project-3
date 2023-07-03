@@ -50,5 +50,12 @@
 
 ![cl python linter](/images/cl-python-linter.png)
 
+**Accessibility and performance**
+- Using lighthouse in devtools I confirmed that the website is performing well.
+
+![lighthouse test score](/images/lighthouse.png)
+
+
+
 
 
