@@ -28,7 +28,7 @@ def print_board(board):
 
 # Convert letters to numbers
 letters_to_numbers = {
-      'A': 0,
+    'A': 0,
     'B': 1,
     'C': 2,
     'D': 3,
@@ -37,3 +37,12 @@ letters_to_numbers = {
     'G': 6,
     'H': 7
 }
+
+# Computer creates 5 ships
+# 5 ships are randomly placed on the game board represented by the board parameter.
+def create_ships(board)
+    for ship in range(5):
+        ship_row, ship_column = randint(0,7), randint(0,7)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+            board[ship_row][ship_column] = "X"
