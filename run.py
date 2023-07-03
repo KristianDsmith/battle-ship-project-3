@@ -40,7 +40,7 @@ HIDDEN_BOARD = [[" "] * 8 for x in range(8)]
 
 # Board for displaying hits and misses
 
-GUESS_BOARD = [[" "] * 8 for x in range(8)]
+GUESS_BOARD = [[" "] * 8 for i in range(8)]
 
 # The output of this function would make a game board in a grid format.
 # Row numbers on the left and column labels on the top.
@@ -77,16 +77,24 @@ def create_ships(board):
             board[ship_row][ship_column] = "X"
 
 # prompt user to input the row and column of a ship's location on the game board and validates the inputs.
+def create_ships(board):
+    for ship in range(5):
+        ship_row, ship_column = randint(0,7), randint(0,7)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+        board[ship_row][ship_column] = "X"
+
+# User input lacation on board
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
     while row not in "12345678":
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
+    column = input("Enter the column of the ship: ").upper()
+    while column not in "ABCDEFGH":
+        print('Not an appropriate choice, please select a valid column')
         column = input("Enter the column of the ship: ").upper()
-        while column not in "ABCDEFGH":
-             print('Not an appropriate choice, please select a valid column')
-             column = input("Enter the column of the ship: ").upper()
-             return int(row) - 1, letters_to_numbers[column]
+    return int(row) - 1, letters_to_numbers[column]
 
 # Check if all ships are hit
 def count_hit_ships(board):
