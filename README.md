@@ -3,7 +3,7 @@
 - Created a simple battleship game user vs computer. 
 - The game begins with the game rules.
 
-## Game Rules
+## Game Rules:
 
 - The game is played on an 8x8 grid.
 - The computer randomly places 5 ships on the grid.
@@ -24,7 +24,7 @@
 
 ![boardgame](/images/board-game-play.png)
 
-## Features
+## Features:
 
 - You have a total of 10 turns to sink the ship.
 - After 10 truns and you have not won you are told that you have run out of turns. 
@@ -35,12 +35,12 @@
 - If the player hits a battleship, a congratulatory message is displayed.
 - If the player misses, a message indicating a miss is displayed.
 
-## Testing 
+## Testing:
 
 - I have tested the gameplay within the console of codeanywhere while building the game.
 - After deploying to Heroku i then tested the game to check it is working properly. 
 
-## Validator Testing
+## Validator Testing:
 
 - tested the code in CL Python Linter and discovered issues with white space
 - lines to long and not eneough line spacing between lines. 
@@ -55,7 +55,25 @@
 
 ![lighthouse test score](/images/lighthouse.png)
 
+## Bugs:
 
+- No bugs to report.
+
+## Deplyment:
+
+- The application has been deployed to Heroku. The steps taken were:
+
+## Heroku:
+- Open the "new" menu and click on "Create new app".
+- Fill form fields with app name and region (Europe) depends on where are you live. Click on "Create app".
+- In the "Settings" section, click on "Add buildpack" and add Python and NodeJS, in that order.
+- In "Settings" section, click "convig vars" and add to Key - PORT and Value - 8000. 
+- In "Deployment method", select the GitHub option and provide the repository details. Click on "Connect".
+- Click on "Deploy Branch" with comprahending repository.
+
+## Credits:
+
+- Inspired from youtube Learn Python with CodeCademy: Battleship! By Dylan Israel.
 
 
 
