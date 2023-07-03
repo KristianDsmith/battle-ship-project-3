@@ -22,7 +22,7 @@
 
 - Then you scroll down to the gameplay board.
 
-![boardgame](/images/battleship-board.png)
+![boardgame](/images/board-game-play.png)
 
 ## Features
 
