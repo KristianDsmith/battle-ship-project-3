@@ -49,10 +49,8 @@
 - tested the code in CL Python Linter and discovered issues with white space
 - lines to long and not eneough line spacing between lines. 
 - all of which have been fixed. 
-- one issue i have not been able to solve is missing whitespace after ','
-- on lines 79 and 89
 
-![cl python linter](/images/cl-python-linter.png)
+![cl python linter](/images/cl-python-checker.png)
 
 ## Technologies used:
 
