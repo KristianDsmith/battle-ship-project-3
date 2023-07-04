@@ -75,32 +75,24 @@ letters_to_numbers = {
 # Computer creates 5 ships
 # 5 ships are randomly placed on game board represented by the board parameter.
 def create_ships(board):
-    for ship in range(5):
-        ship_row, ship_column = randint(0,7), randint(0,7)
+    for _ in range(5):
+        ship_row, ship_column = randint(0, 7), randint(0, 7)
         while board[ship_row][ship_column] == "X":
             ship_row, ship_column = get_ship_location()
     board[ship_row][ship_column] = "X"
-
-# prompt user to input row and column of a ship's location on the game board.
-
-
-def create_ships(board):
-    for ship in range(5):
-        ship_row, ship_column = randint(0,7), randint(0,7)
-        while board[ship_row][ship_column] == "X":
-            ship_row, ship_column = get_ship_location()
-        board[ship_row][ship_column] = "X"
 
 # User input lacation on board
 
 
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
-    while row not in "12345678":
+    while row not in ["1", "2", "3", "4", "5", "6", "7", "8"] or row == "":
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
-    while column not in "ABCDEFGH":
+    while (
+        column not in ["A", "B", "C", "D", "E", "F", "G", "H"] or column == ""
+    ):
         print('Not an appropriate choice, please select a valid column')
         column = input("Enter the column of the ship: ").upper()
     return int(row) - 1, letters_to_numbers[column]

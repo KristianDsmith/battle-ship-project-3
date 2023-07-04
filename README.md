@@ -50,14 +50,20 @@
 
 ![cl python linter](/images/cl-python-linter.png)
 
-**Accessibility and performance**
-- Using lighthouse in devtools I confirmed that the website is performing well.
+## Technologies used:
 
-![lighthouse test score](/images/lighthouse.png)
+## Languages:
+
+- Python: The main language used to develop the application.
+- JavaScript: The language used by the Code Institute to run the mock terminal in the browser.
+- HTML: The language used by the Code Institute to create the layout needed to run the mock terminal in the browser.
+
 
 ## Bugs:
 
-- No bugs to report.
+- Found a bug with application accepting an empty input.
+- I fixed it by adding an aditional check in the (if) statement. 
+
 
 ## Deployment:
 
