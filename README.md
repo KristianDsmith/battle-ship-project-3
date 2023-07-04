@@ -1,5 +1,9 @@
 # Battleship Game
 
+![battleship game](/images/battleship-game-play.png)
+
+- https://battleships-23-b994430075a8.herokuapp.com/
+
 - Created a simple battleship game user vs computer. 
 - The game begins with the game rules.
 
