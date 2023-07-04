@@ -51,6 +51,13 @@ GUESS_BOARD = [[" "] * 8 for i in range(8)]
 
 
 def print_board(board):
+    """
+    Prints the game board.
+
+    Args:
+        board (list): The game board as a 2D list.
+    """
+
     print("  A B C D E F G H")
     print("  +-+-+-+-+-+-+-+")
     row_number = 1
@@ -75,6 +82,12 @@ letters_to_numbers = {
 # Computer creates 5 ships
 # 5 ships are randomly placed on game board represented by the board parameter.
 def create_ships(board):
+    """
+    Randomly places 5 ships on the game board.
+
+    Args:
+        board (list): The game board as a 2D list.
+    """
     for _ in range(5):
         ship_row, ship_column = randint(0, 7), randint(0, 7)
         while board[ship_row][ship_column] == "X":
@@ -85,6 +98,12 @@ def create_ships(board):
 
 
 def get_ship_location():
+    """
+    Prompts the user to enter the row and column of a ship on the game board.
+
+    Returns:
+        tuple: The row and column coordinates of the ship.
+    """
     row = input("Enter the row of the ship: ").upper()
     while row not in ["1", "2", "3", "4", "5", "6", "7", "8"] or row == "":
         print('Not an appropriate choice, please select a valid row')
@@ -101,6 +120,15 @@ def get_ship_location():
 
 
 def count_hit_ships(board):
+    """
+    Counts the number of hit ships on the game board.
+
+    Args:
+        board (list): The game board as a 2D list.
+
+    Returns:
+        int: The count of hit ships.
+    """
     count = 0
     for row in board:
         for column in row:
